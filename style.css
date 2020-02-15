@@ -1,0 +1,148 @@
+/* 
+Theme Name: toka-branding-theme
+Author: blake
+Description: custom theme for toka branding
+textdomain: tokabrandingtheme
+*/
+
+/* Top level that should apply to just about everything */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+/* Header styling goes here */
+@media(min-width: 992px) {
+    .navbar {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .primary-menu-nav-item .nav-link {
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .current-menu-item .nav-link {
+        border-bottom: 3px solid #072044;
+    }
+    
+    #navbarSupportedContent:hover .nav-line-bottom .primary-menu-nav-item .nav-link {
+        border-bottom: 3px solid transparent;
+    }
+    
+    .primary-menu-nav-item .nav-link:hover{
+        border-bottom: 3px solid #072044 !important;
+    }
+}
+
+.header {
+    background-color: #F8F9FA;
+}
+
+.primary-menu-nav-item a {
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+/* Special menu styling goes here */
+.special-menu-nav-item .nav-link{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 0.8rem;
+    color: lightgrey !important;
+}
+
+.header-special-notice-row p {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 0.8rem;
+    color: lightgrey !important;
+}
+
+.special-nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+@media(min-width: 992px) {
+    .header-special-notice-row {
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+
+/* Home page styling goes here */
+.home-jumbotron-hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    z-index: 4;
+    position: relative;
+}
+
+.home-jumbotron-hero-1 {
+    background-image: url('./images/hero_2.jpg');
+    background-position: 50% 50%;
+}
+
+.home-jumbotron-hero-2 {
+    background-image: url('./images/hero_3.jpg');
+    background-position: 50% 100%;
+}
+
+.home-jumbotron-overlay {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    background-color: rgb(0,0,0,0.4);
+    padding: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-hero-container {
+    position: relative;
+}
+
+@media(min-width: 992px) {
+    .home-hero-container {
+        width: 45%;
+    }
+}
+
+@media(min-width: 768px) {
+    .home-hero-container {
+        width: 75%;
+    }
+}
+
+@media(min-width: 576px) {
+    .home-hero-container {
+        width: 90%;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 800px;
+}
